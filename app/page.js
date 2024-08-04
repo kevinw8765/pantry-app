@@ -18,7 +18,8 @@ const style = {
   display: 'flex',
   flexDirection: 'column',
   gap:3,
-};
+}; 
+if (typeof window !== "undefined") { window.alert("window.alert from client component"); }
 
 export default function Home() {
   const [pantry, setPantry] = useState([])
